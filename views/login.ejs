@@ -1,0 +1,13 @@
+<div>
+    <form action="/login" method="POST" class="formLogin">
+    <label for="username" class="formLabel">USERNAME</label>
+    <input type="text" name="username" class="formInput">
+    <label for="password" class="formLabel">PASSWORD</label>
+    <input type="password" name="password" class="formInput">
+    <button type="submit" class="sendBtn">SEND</button>
+</form>
+
+    <% if (wrong) { %>
+      <p><%-wrong%></p>
+        <% }%>
+</div>

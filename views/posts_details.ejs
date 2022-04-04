@@ -1,0 +1,13 @@
+<div class="container-posts-details">
+    <div class="detailPost">
+        <div class="titleAuthDet">
+           <h1><%-posts.title %></h1>
+           <h2>Author : <%-posts.author %></h2>
+        </div>
+     
+        <div class="postTextDet"><p><%-posts.text %></p></div>
+        <% if (currentUser && currentUser.admin === true ) {%>
+        <a href="<%-link %>"><button class="deletePostBtn">DELETE POST</button></a>
+        <% } %>
+    </div>
+</div>

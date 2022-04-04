@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>@Posts</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="/stylesheets/buttons.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/"><h1 class="logo">@POSTS</h1></a>
+        <div class="container-btn-header">
+          <% if (currentUser && !currentUser.membership_status) { %>
+          <a href="/become-vip"><button class="specBtn">BECOME VIP</button></a>
+        <!-- <a href="/admin"><button class="adminBtn">ADMIN</button></a>--> 
+          <a href="/logout"><button class="specBtn">LOG OUT</button></a>
+          <%} else if (!currentUser) { %>
+          <a href="/sign-up"><button class="specBtn">Sign up</button></a> 
+          <a href="/login"><button class="loginBtn">Log in</button></a>
+          <% } else if(currentUser && currentUser.membership_status) {%>
+            <a href="/logout"><button class="loginBtn">LOG OUT</button></a>
+            <% } %>
+        </div>
+     
+      </nav>
+    </header>
+      <%-body%>
+  </body>
+</html>

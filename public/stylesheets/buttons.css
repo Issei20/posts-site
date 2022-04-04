@@ -1,0 +1,73 @@
+.specBtn {
+    height: 2.5rem;
+    width: 6vw;
+    border: 2px solid white;
+    border-radius: 1.2rem;
+    background: rgb(41, 194, 255);
+    color: white;
+    transition: all 200ms ease-in-out;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.specBtn:hover {
+    color:rgb(41, 194, 255);
+    background: white;
+    cursor: pointer;
+}
+
+.createBtn {
+    height: 2rem;
+    border: 2px solid white;
+    border-radius: 0.9rem;
+    background: rgb(255, 255, 255);
+    color: rgb(41, 194, 255); 
+    transition: all 200ms ease-in-out;
+    font-weight: bold;
+    border-color:rgb(41, 194, 255); 
+}
+
+.createBtn:hover {
+    color:rgb(255, 255, 255);
+    background: rgb(41, 194, 255);
+    cursor: pointer;
+    border-color:rgb(41, 194, 255);
+
+}
+
+.adminBtn {
+    height: 2.5rem;
+    width: 6vw;
+    border: 2px solid white;
+    border-radius: 1.2rem;
+    background: rgb(223, 71, 71);
+    color: white;
+    transition: all 200ms ease-in-out;
+    font-weight: bold;
+    font-size: 0.9rem;
+ }
+
+ .adminBtn:hover {
+    color:rgb(223, 71, 71);
+    background: white;
+    cursor: pointer;
+}
+
+.loginBtn {
+    height: 2.5rem;
+    width: 6vw;
+    border: 2px solid white;
+    border-radius: 1.2rem;
+    background: rgb(41, 194, 255);
+    color: white;
+    transition: all 200ms ease-in-out;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+
+.loginBtn:hover {
+    color:rgb(41, 194, 255);
+    background: white;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+    <div class="container-index">
+    <h1>POSTS</h1>
+    <div>
+        <div class="sidebar">
+            <% if (currentUser) { %>
+           <a href="/createPost"><button class="createBtn">CREATE POST</button></a> 
+            <% } else { %> 
+            <% } %>
+          </div>
+        <div class="container-posts">
+            <% posts_list.forEach(posts => { %>
+              <a class="linkPost" href=<%-posts.url%>><div class="postCard">
+                  <div class="header-post">
+                   <% if (posts.title === "") { %> 
+                    <div class="post-title">Untitled</div>
+                    <% if (currentUser) { %> 
+                        <div class="post-author">Author : <%-posts.author %></div>
+                        <% } %>  
+                    </div>  
+                    <% } else { %>
+                   <div class="post-title">Title : <%-posts.title %></div> 
+                    <% if (currentUser) { %> 
+                        <div class="post-author">Author : <%-posts.author %></div>
+                        <% } %>
+            
+                </div>
+                    <% } %> 
+                    <div class="post-text"><%-posts.text %></div>
+                   
+                </div> 
+               <% }) %>
+               </div>
+            </a>
+    </div>
+    </div>

@@ -1,0 +1,14 @@
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vw;
+    background-color: rgb(41, 194, 255);
+
+}
+
+.container-btn-header {
+    display: flex;
+    gap: 1vw;
+}

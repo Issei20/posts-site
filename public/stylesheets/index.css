@@ -1,0 +1,40 @@
+.container-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.container-posts {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.postCard {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    border-radius: 0.5rem;
+    background-color: rgb(245, 245, 245);
+}
+.header-post {
+    background-color: rgb(224, 224, 224);
+    border-top-left-radius: 0.5rem ;
+    border-top-right-radius: 0.5rem;
+    padding: 1vw;
+    color: rgb(58, 58, 58);
+    font-weight: bold;
+}
+
+.post-text {
+    border-top: none;
+    padding: 2vw;
+    color: rgb(24, 24, 24);
+    line-height: 30px;
+
+}
+
+.linkPost {
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+}

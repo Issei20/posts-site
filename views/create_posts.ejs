@@ -1,0 +1,17 @@
+   <div class="container-create-post">
+       <form action="" method="POST" class="formCreate">
+           <label for="title" class="labelCreate">TITLE</label>
+           <input type="text" name="title" class="inputCreate">
+           <label for="post_text" class="labelCreate">YOUR TEXT</label>
+           <textarea name="post_text" id="post_text" cols="30" rows="10" class="textareaCreate"></textarea>
+           <button type="submit" class="sendBtn">SEND</button>
+       </form>
+      
+   </div>
+   <ul class="errors-container">
+    <% if (errors !== undefined) { %>
+        <% errors.forEach(error => { %>
+            <li class="errors"><%-error.msg %></li>  
+             <% }) %>
+             <% } %>
+        </ul>

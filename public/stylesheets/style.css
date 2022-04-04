@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  height:100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(41, 194, 255);
+}
+
+
+a {
+  color: rgb(255, 255, 255);
+  
+  
+}
+
+.sidebar {
+  display: flex;
+  justify-content: center;
+  padding:30px;
+  width: 10vw;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.errors {
+
+  height: 40px;
+  color: rgb(0, 94, 182);
+}
+
+.errors-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40vw;
+  margin-top: 5vh;
+}
+
+.container-create-post {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+
+  
+}
+
+.already-taken-msg{
+  text-align: center;
+}
+/* Sign up form */
+
+.sign-up-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  gap: 1.5vh;
+}
+
+
+.post-author {
+  color: rgb(90, 90, 90);
+  font-weight: bold;
+}
+
+.formLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  gap: 1vw;
+  flex-direction: column;
+}
+
+.formInput {
+  border: none;
+  height: 2vh;
+  border-radius: 0.99rem;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: rgb(227, 237, 253);
+}
+
+.formLabel {
+  font-weight: bold;
+  color: rgb(146, 144, 144);
+}
+
+.sendBtn {
+  height: 3vh;
+  border-radius: 1.2rem;
+  width: 5.5vw;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(41, 194, 255);
+  font-weight: bold;
+  border: 2px solid rgb(41, 194, 255);
+  font-size: 0.8rem;
+}
+
+.sendBtn:hover {
+  background-color: rgb(41, 194, 255);
+  color: white;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-vip {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.form-vip {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+
+.formCreate {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  flex-direction: column;
+  width: 20vw;
+}
+
+.labelCreate {
+  font-weight: bold;
+  color: rgb(131, 131, 131);
+}
+
+.inputCreate {
+  width: 30vw;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: rgb(227, 237, 253);
+  height: 4vh;
+  font-size: 1rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.textareaCreate {
+  width: 30vw;
+  height: 40vh;
+  border-radius: 0.5rem;
+  background-color: rgb(227, 237, 253);
+  border: none;
+  font-size: 1rem;
+  padding: 15px;
+}
+
+.container-posts-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.detailPost {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10vh;
+}
+
+.titleAuthDet {
+  color: grey;
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1vw;
+  border-top-left-radius: 0.5rem ;
+  border-top-right-radius: 0.5rem;
+}
+
+.titleAuthDet > h1 {
+  font-size: 1.2rem;
+  color: rgb(49, 49, 49);
+}
+
+.titleAuthDet > h2 {
+  font-size: 0.8rem;
+}
+
+
+.postTextDet {
+  width: 100%;
+  background:rgb(245, 245, 245);
+  color: rgb(0, 0, 0);
+  padding: 1vw;
+  border-bottom-left-radius: 0.5rem ;
+  border-bottom-right-radius: 0.5rem;
+  line-height: 30px;
+}
+
+.deletePostBtn {
+  margin-top: 12vh;
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  height: 4vh;
+  border-radius: 1rem;
+  font-weight: bold;
+  width: 7vw;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+
+.deletePostBtn:hover {
+  background-color: red;
+  color: white;
+}
+
+.container-delete-post {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  
+}
+
+
+.yeBtn {
+  background-color: red;
+  height: 30px;
+  width: 60px;
+  border-radius: 0.9rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 10px;
+  
+}
+
+.noBtn {
+  background-color: rgb(69, 156, 66);
+  height: 30px;
+  width: 60px;
+  border-radius: 0.9rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 0px;
+}
+
+.deleteLabel {
+  font-weight: bold;
+  margin: 5px;
+  font-size: 1.3rem;
+}
+
+.failedContainer {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: black;
+
+}

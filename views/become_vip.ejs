@@ -1,0 +1,17 @@
+
+    <div class="container-vip">
+        <h1>Become a vip member, enter the secret password !</h1>
+        <form action="" method="post" class="form-vip">
+            <label for="input-vip"  class="formLabel">Enter the right password</label>
+            <input type="text" name="secret_pass" class="formInput">
+            <button type="submit" class="sendBtn">SEND</button>
+
+        </form>
+        <ul class="errors-container">
+            <% if (errors !== undefined) { %>
+                <% errors.forEach(error => { %>
+                    <li class="errors"><%-error.msg %></li>  
+                     <% }) %>
+                     <% } %>
+                </ul>
+    </div>

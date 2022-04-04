@@ -1,0 +1,40 @@
+
+    <div class="sign-up-container">
+        <form action="" method="POST" class="sign-up-form">
+            <label for="input_first_name" class="formLabel">FIRST NAME</label>
+            <% if (user===undefined) { %>
+                <input type="text" name="first_name" class="formInput">
+                <% } else { %>
+                <input type="text" name="first_name" value="<%-user.first_name %>" class="formInput">
+                <% } %>
+            <label for="input_last_name" class="formLabel">LAST NAME</label>
+            <% if (user===undefined) { %>
+                <input type="text" name="last_name" class="formInput">
+                <% } else { %>
+                <input type="text" name="last_name" value="<%-user.last_name %>" class="formInput">
+                <% } %>
+            <label for="username" class="formLabel">USERNAME</label>
+            <% if (user===undefined) { %>
+            <input type="text" name="username" class="formInput">
+            <% } else { %>
+            <input type="text" name="username" value="<%-user.username %>" class="formInput">
+            <% } %>
+            <label for="password" class="formLabel">PASSWORD</label>
+            <input type="password" name="password" class="formInput">
+            <label for="password_confirm" class="formLabel">CONFIRM PASSWORD</label>
+            <input type="password" name="password_confirm" class="formInput">
+            <button type="submit" class="sendBtn">SEND</button>
+        </form>
+         
+    </div>
+    <ul class="errors-container">
+    <% if (errors !== undefined) { %>
+        <% errors.forEach(error => { %>
+            <li class="errors"><%-error.msg %></li>  
+             <% }) %>
+             <% } %>
+        </ul>
+    
+    <% if(messageTaken){ %>
+        <p class="already-taken-msg"><%-messageTaken%></p>
+        <% } %>
